@@ -1,147 +1,222 @@
-  body {
-    padding: 20px; /* i. Padding */
-    margin: 0; /* ii. Margins */
-    width: 100%; /* iii. Width */
-    max-width: 1200px; /* iii. Max-width */
-    border: 1px solid #5c5c5c; /* iv. Border using shorthand property */
-    font: 16px/1.5 Arial, sans-serif; /* v. Font using shorthand property */
-    display: flex; /* Use flexbox layout */
-    flex-direction: column; /* Arrange child elements vertically */
-  }
 
-  html, body {
-    height: 100%; /* Set the height of html and body to 100% */
-    margin: 0;
-    padding: 20px;
-  }
+body {
+  font: 16px/1.5 Arial, sans-serif;
+  padding: 20px;
+  max-width: 2560px;
+  max-height: 1440px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Use vh (viewport height) instead of % to ensure body fills the whole viewport height */
+}
 
-  header, nav, aside, main, footer {
-    display: block;
-  }
+header {
+  display: flex;
+  align-items: center;
+  background-color: #fa5bc5;
+  padding: 20px;
+  color: #fff;
+  border: 1px solid #000000;
+}
 
-  aside {
-    float: left;
-    width: 33.33%; /* Takes up 1/3 of the page width */
-    margin-right: 20px;
-  }
-  
-  main {
-    float: left;
-    width: 66.66%; /* Takes up 2/3 of the page width */
-    flex: 1; /* Make the main section take the remaining vertical space */
-  }
+header img {
+  width: 120px;
+  height: 80px;
+}
 
-  header {
-    background-color: #fa5bc5; /* Background color */
-    text-align: center; /* Center align the content */
-    padding: 20px; /* Padding */
-    color: #fff; /* Text color */
-    border: 1px solid #000000; /* Border colour header */
-  }
-  
-  h1 {
-    margin: 0; /* Remove default margin */
-    font-size: 28px; /* Font size */
-  }
-  
-  a.logo {
-    display: block; /* Make the logo a block-level element */
-    padding: 10px; /* Add padding around the logo */
-    color: #fff; /* Text color */
-    text-decoration: none; /* Remove underline from the link */
-    font-size: 20px; /* Font size */
-  }
-  
-  a.logo:hover {
-    text-decoration: underline; /* Add underline on hover */
-  }
+h1 {
+  margin: 0;
+  font-size: 28px;
+  flex-grow: 1; /* Add flex-grow to make the title take up the remaining space */
+}
 
-  nav {
-    text-align: right; /* Align links to the right */
-    border: 1px #000000; /* Border Colour nav */
-  }
-  
-  .nav-link {
-    display: inline-block; /* Make the links inline-block to set margins, padding, and borders */
-    margin: 5px; /* Add margins between the links */
-    padding: 10px 20px; /* Add padding to create button-like appearance */
-    border: 1px solid #000000; /* Add border to create button-like appearance */
-    background-color: #f0f0f0; /* Background color */
-    color: #333; /* Text color */
-    text-decoration: none; /* Remove underline from the links */
-    font-size: 18px; /* Enlarge font size */
-    transition: background-color 0.3s, color 0.3s; /* Add smooth transition effect */
-  }
-  
-  .nav-link:hover {
-    background-color: #fa5bc5; /* Change background color on hover */
-    color: #ffffff; /* Change text color on hover */
-  }
-  
-  aside {
-    float: left;
-    width: 33.33%;
-    margin-right: 20px;
-    margin-top: 40px;
-  }
-  
-  aside h2 {
-    margin: 0;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #5c5c5c;
-    font-size: 20px; /* You can adjust the font size as needed */
-  }
-  
-  aside ul {
-    list-style: none; /* Remove bullet points */
-    padding: 0; /* Remove default padding */
-    line-height: 1.5; /* Increase line spacing */
-  }
-  
-  aside li {
-    padding: 5px 0; /* Add padding between list items */
-  }
+a.logo {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  margin-right: auto;
+}
 
-  main {
-    float: left;
-    width: 66.66%;
-  }
-  
-  main h2 {
-    margin: 0;
-    margin-top: 40px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #5c5c5c;
-    font-size: 20px; /* You can adjust the font size as needed */
-  }
-  
-  main p {
-    margin: 10px 0; /* Add margins to separate paragraphs */
-  }
-  
-  figure {
-    margin: 20px 0;
-    padding: 10px;
-    border: 1px solid #5c5c5c;
-  }
-  
-  figure img,
-  figure iframe {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 10px 0;
-  }
-  
-  figcaption {
-    text-align: center;
-    font-style: italic;
-    color: #666;
-  }
+a.logo img {
+  width: 120px;
+  height: 60px;
+}
 
-  footer {
-    font-size: 14px; /* Reduce the font size */
-    text-align: center; /* Center the text */
-    background-color: #f0f0f0; /* Same background color as the header */
-    padding: 10px; /* Add padding for spacing */
-  }
+a.logo:hover {
+  text-decoration: underline;
+}
+
+nav {
+  text-align: right;
+  border: 1px #000000;
+}
+
+.nav-link {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 20px;
+  border: 1px solid #000000;
+  background-color: #f0f0f0;
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #fa5bc5;
+  color: #ffffff;
+}
+
+aside {
+  width: 33.33%;
+  float: right; /* Add float: right to position the aside on the right */
+  margin-top: 40px;
+}
+
+aside h2 {
+  margin: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #5c5c5c;
+  font-size: 20px;
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+  line-height: 1.5;
+}
+
+aside li {
+  padding: 5px 0;
+}
+
+main {
+  width: 66.66%;
+  margin-top: 40px;
+}
+
+main h2 {
+  text-align: center;
+  margin: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #5c5c5c;
+  font-size: 20px;
+}
+
+main label {
+  display: block;
+  margin-bottom: 5px;
+  color: #fa5bc5;
+}
+
+main input[type="text"],
+main input[type="email"],
+main select,
+main textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+main textarea {
+  resize: vertical;
+}
+
+main input[type="radio"],
+main input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+main p {
+  margin: 10px 0;
+}
+
+figure {
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #5c5c5c;
+}
+
+figure img,
+figure iframe {
+  align-items: center;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+  color: #666;
+}
+
+footer {
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  background-color: #fa5bc5;
+  border: 1px solid #5c5c5c;
+  margin-top: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-size: 18px;
+  color: #fa5bc5;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+label {
+  color: #fa5bc5;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #fa5bc5;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  background-color: #fa5bc5;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #e640a8;
+}
+
+
+  

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kevin Barath - Contact Us</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+      <img src="images/icon.jpg" alt="icon">
+      <h1>Kevin Barath - Contact Us</h1>
+    </header>
+    <nav>
+      <a href="Index.html" class="nav-link">Home</a>
+      <a href="Contact.html" class="nav-link">Contact Us</a>
+    </nav>
+    <aside>
+      <h2>Subaru Chasis List</h2>
+      <ul>
+        <li>Subaru Outback 1998 (BD)</li>
+        <li>Subaru Outback 2003 (BH)</li>
+        <li>Subaru Legacy B4 2001 (BG)</li>
+      </ul>
+    </aside>
+    <main>
+        <h2>Contact Form</h2>
+        <form autocomplete="on">
+          <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required autofocus>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label>Employment Status:</label>
+            <select name="employment" required>
+              <option value="">Select Option</option>
+              <option value="student">Student</option>
+              <option value="full-time">Employed Full-time</option>
+              <option value="part-time">Employed Part-time</option>
+              <option value="retired">Retired</option>
+              <option value="other">Other</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <legend>How did you hear about our site?</legend>
+            <label>
+              <input type="radio" name="hear-about" value="social-media" required>
+              Social Media
+            </label>
+
+            <label>
+              <input type="radio" name="hear-about" value="friend" required>
+              Friend
+            </label>
+
+            <label>
+              <input type="radio" name="hear-about" value="search-engine" required>
+              Search Engine
+            </label>
+
+            <label>
+              <input type="radio" name="hear-about" value="other" required>
+              Other
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Tell Us What You Think!</legend>
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here"></textarea>
+          </fieldset>
+
+          <fieldset>
+            <legend>Submit</legend>
+            <label>
+              <input type="checkbox" name="not-robot" required>
+              I am not a robot.
+            </label>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+          </fieldset>
+        </form>
+    </main>
+    <footer>
+      <p>&copy; 2023 Kevin Barath - 8830455</p>
+    </footer>
+</body>
+</html>
+
