@@ -141,7 +141,7 @@ figure {
 
 figure img,
 figure iframe {
-  align-items: center;
+  align-content: center;
   display: block;
   max-width: 100%;
   height: auto;
