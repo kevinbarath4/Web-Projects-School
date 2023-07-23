@@ -7,7 +7,7 @@ body {
   margin: 20px auto;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Use vh (viewport height) instead of % to ensure body fills the whole viewport height */
+  min-height: 100vh; 
 }
 
 header {
@@ -27,7 +27,7 @@ header img {
 h1 {
   margin: 0;
   font-size: 28px;
-  flex-grow: 1; /* Add flex-grow to make the title take up the remaining space */
+  flex-grow: 1; 
 }
 
 a.logo {
@@ -70,7 +70,7 @@ nav {
 
 aside {
   width: 33.33%;
-  float: right; /* Add float: right to position the aside on the right */
+  float: left; 
   margin-top: 40px;
 }
 
