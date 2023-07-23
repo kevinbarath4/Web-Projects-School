@@ -37,15 +37,6 @@ a.logo {
   margin-right: auto;
 }
 
-a.logo img {
-  width: 120px;
-  height: 60px;
-}
-
-a.logo:hover {
-  text-decoration: underline;
-}
-
 nav {
   text-align: right;
   border: 1px #000000;
