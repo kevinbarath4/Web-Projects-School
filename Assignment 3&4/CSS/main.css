@@ -1,212 +1,213 @@
-
+/* Global Styling for the body */
 body {
-  font: 16px/1.5 Arial, sans-serif;
-  padding: 20px;
-  max-width: 2560px;
-  max-height: 1440px;
-  margin: 20px auto;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; 
+  font: 16px/1.5 Arial, sans-serif; /* Font to Arial, sans-serif, size 16px, line height 1.5 */
+  padding: 20px; /* padding around the body */
+  max-width: 2560px; /* Maximum width to 2560px */
+  max-height: 1440px; /* Maximum height to 1440px */
+  margin: 20px auto; /* Center the body using margin to 20 px, top bottom left right */
+  display: flex; /* Display in column layout */
+  flex-direction: column; /* Display in column layout */
+  min-height: 100vh; /* Body uses full viewport height */
 }
 
+/* Header Styling */
 header {
-  display: flex;
-  align-items: center;
-  background-color: #fa5bc5;
-  padding: 20px;
-  color: #fff;
-  border: 1px solid #000000;
+  display: flex; /* Flexbox items vertically alligned */
+  align-items: center; /**/
+  background-color: #fa5bc5; /* Set the background colour of the header to a pink shade */
+  padding: 20px; /* Add 20px padding to the header */
+  color: #fff; /* Set the text colour to white */
+  border: 1px solid #000000; /* Add a black border around the header with a thickness of 1px */
 }
 
 header img {
-  width: 120px;
-  height: 80px;
+  width: 120px; /* Set the width of the header's image to 120px */
+  height: 80px; /* Set the height of the header's image to 80px */
 }
 
+/* Main Header Styling */
 h1 {
-  margin: 0;
-  font-size: 28px;
-  flex-grow: 1; 
+  margin: 0; /* Remove the default margin of the main heading */
+  font-size: 28px; /* Set the font size of the main heading to 28px */
+  flex-grow: 1; /* Allow the main heading to grow and take up remaining space in the flex container */
 }
 
-a.logo {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  margin-right: auto;
-}
-
+/* Navigation Styles */
 nav {
-  text-align: right;
-  border: 1px #000000;
+  text-align: right; /* Align the navigation links to the right (right-align) */
+  border: 1px #000000; /* Add a black border around the navigation with a thickness of 1px */
 }
 
 .nav-link {
-  display: inline-block;
-  margin: 5px;
-  padding: 10px 20px;
-  border: 1px solid #000000;
-  background-color: #f0f0f0;
-  color: #333;
-  text-decoration: none;
-  font-size: 18px;
-  transition: background-color 0.3s, color 0.3s;
+  display: inline-block; /* Display the navigation links as inline-block elements */
+  margin: 5px; /* Add 5px margin around the navigation links */
+  padding: 10px 20px; /* Add 10px padding horizontally and 20px padding vertically to the navigation links */
+  border: 1px solid #000000; /* Add a black border around the navigation links with a thickness of 1px */
+  background-color: #f0f0f0; /* Set the background colour of the navigation links to light gray */
+  color: #333; /* Set the text colour to a dark gray */
+  text-decoration: none; /* No default text decorations applied */
+  transition: background-color 0.3s, color 0.3s; /* Transition time for the background colour to come in */
 }
 
 .nav-link:hover {
-  background-color: #fa5bc5;
-  color: #ffffff;
+  background-color: #fa5bc5; /* Change the Nav-Link background colour to a pink shade */
+  color: #ffffff; /* Change the text color to white */
 }
 
 aside {
-  width: 33.33%;
-  float: left; 
-  margin-top: 40px;
+  width: 33.33%; /* Set the width of the sidebar to 33.33% */
+  float: left; /* Set the aside category to the left */
+  margin-top: 40px; /* Add 40px margin to the top of the section */
 }
 
 aside h2 {
-  margin: 0;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #5c5c5c;
-  font-size: 20px;
+  margin: 0; /* Remove the default margin of the heading */
+  padding-bottom: 10px; /* Add 10px padding at the bottom of the heading */
+  border-bottom: 1px solid #5c5c5c; /* Add a bottom border to the heading with a thickness of 1px and colour */
+  font-size: 20px; /* Change font size to 20px */
 }
 
 aside ul {
-  list-style: none;
-  padding: 0;
-  line-height: 1.5;
+  list-style: none; /* Remove the default list styles (bullets) from the unordered list */
+  padding: 0; /* Remove padding from the unordered list */
+  line-height: 1.5; /* Set the line height to 1.5 for better spacing */
 }
 
 aside li {
-  padding: 5px 0;
+  padding: 5px 0; /* Add 5px padding on the top and bottom and no padding on the left and right for list items */
 }
 
+/* Main content Styles */
 main {
-  width: 66.66%;
-  margin-top: 40px;
+  width: 66.66%; /* Set the width of the main content area to 66.66% */
+  margin-top: 40px; /* Add 40px margin to the top of the main content to create space between header and content */
 }
 
 main h2 {
-  text-align: center;
-  margin: 0;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #5c5c5c;
-  font-size: 20px;
+  text-align: center; /* Center align the main heading */
+  margin: 0; /* Remove the default margin of the main heading */
+  padding-bottom: 10px; /* Add 10px padding at the bottom of the main heading */
+  border-bottom: 1px solid #5c5c5c; /* Add a bottom border to the heading with a thickness of 1px and colour */
+  font-size: 20px; /* Set the font size of the heading to 20px */
 }
 
 main label {
-  display: block;
-  margin-bottom: 5px;
-  color: #fa5bc5;
+  display: block; /* Display as a block */
+  margin-bottom: 5px; /* Margin bottom by 5 pixels */
+  color: #fa5bc5; /* Changes text colour to a pink shade */
 }
 
 main input[type="text"],
 main input[type="email"],
 main select,
 main textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
+  width: 100%; /* Changes Width to 100% */
+  padding: 10px; /* Adds 10 px padding to input elements */
+  margin-bottom: 10px; /* Adds 10 px margin to the bottom of the elements */
+  border: 1px solid #ccc; /* Adds a white border 1px and is solid */
 }
 
 main textarea {
-  resize: vertical;
+  resize: vertical; /* Vertical resizing is enabled */
 }
 
 main input[type="radio"],
 main input[type="checkbox"] {
-  margin-right: 5px;
+  margin-right: 5px; /* Adds margin right by 5 px */
 }
 
 main p {
-  margin: 10px 0;
+  margin: 10px 0; /* Adds margin 10 pixels vertically */
 }
 
 figure {
-  margin: 20px 0;
-  padding: 10px;
-  border: 1px solid #5c5c5c;
+  margin: 20px 0; /* Adds margin 20 pixels vertically */
+  padding: 10px; /* Adds 10 px of padding */
+  border: 1px solid #5c5c5c; /* Adds a border 1px and is solid with a grey shade */
 }
 
 figure img,
 figure iframe {
-  align-content: center;
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 10px 0;
+  align-content: center; /* Align content in the center */
+  display: block; /* Display element as a block */
+  max-width: 100%; /* Set the maximum width of images and iframes to 100% */
+  height: auto; /* Set the height of images to adjust automatically to maintain the original aspect ratio */
+  margin: 10px 0; /* Add 10px margin on top and bottom of images and iframes for spacing */
 }
 
 figcaption {
-  text-align: center;
-  font-style: italic;
-  color: #666;
+  text-align: center; /* Center align the text within the figure caption */
+  font-style: italic; /* Set the font style of the caption to italic */
+  color: #666; /* Set the text color of the caption to a light gray shade */
 }
 
 footer {
-  font-size: 14px;
-  text-align: center;
-  color: #fff;
-  background-color: #fa5bc5;
-  border: 1px solid #5c5c5c;
-  margin-top: 20px;
+  font-size: 14px; /* Set the font size of the footer text to 14px */
+  text-align: center; /* Center align the text within the footer */
+  color: #fff; /* Set the text color of the footer text to white */
+  background-color: #fa5bc5; /* Set the background colour of the footer to the pink shade */
+  border: 1px solid #5c5c5c; /* Add a 1px solid border around the footer in a grey shade*/
+  margin-top: 20px; /* Add 20px margin on top of the footer for spacing */
 }
 
+/* Form Styles */
 form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin-top: 20px;
-}
+  display: flex; /* Display the form content in a flexbox with items aligned vertically centered */
+  flex-direction: column; /* Set the flex direction in columns */
+  align-items: center; /* Aligns the items in the form to the center */
+  width: 100%; /* Set the width of the form to 100% */
+  margin-top: 20px; /* Add 20px margin to the top of the form to create space between content and form */
+} 
 
 fieldset {
-  border: none;
-  margin-bottom: 20px;
+  border: none; /* Remove the default border of fieldset */
+  margin-bottom: 20px; /* Add 20px margin at the bottom of fieldset for spacing between fieldsets */
 }
 
 legend {
-  font-size: 18px;
-  color: #fa5bc5;
-  font-weight: bold;
-  margin-bottom: 10px;
+  font-size: 18px; /* Set the font size of the legend to 18px */
+  color: #fa5bc5; /* Set the color of the legend text to the pink shade */
+  font-weight: bold; /* Make the legend text bold */
+  margin-bottom: 10px; /* Add 10px margin at the bottom of the legend for spacing */
 }
 
 label {
-  color: #fa5bc5;
-  font-weight: bold;
-  margin-bottom: 5px;
+  color: #fa5bc5; /* Set the color of the label text to the pink shade */
+  font-weight: bold; /* Make the label text bold */
+  margin-bottom: 5px; /* Add 5px margin at the bottom of the label for spacing */
 }
 
 input[type="text"],
 input[type="email"],
-input[type="tel"],
 select,
 textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 2px solid #fa5bc5;
-  border-radius: 5px;
-  font-size: 16px;
+  width: 100%; /* Set the width of text, email, tel inputs, select, and textarea to 100% */
+  padding: 10px; /* Add 10px padding to all sides of text, email, tel inputs, select, and textarea */
+  margin-bottom: 15px; /* Add 15px margin at the bottom of text, email, tel inputs, select, and textarea for spacing */
+  border: 2px solid #fa5bc5; /* Add a 2px solid border with the pink shade (#fa5bc5) color around text, email, tel inputs, select, and textarea */
+  border-radius: 5px; /* Apply a border-radius of 5px to text, email, tel inputs, select, and textarea to create rounded corners */
+  font-size: 16px; /* Set the font size of text, email, tel inputs, select, and textarea to 16px */
+}
+
+input[type="email"]:hover,
+input[type="text"]:hover {
+  cursor: pointer;
 }
 
 input[type="submit"],
 input[type="reset"] {
-  background-color: #fa5bc5;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
+  background-color: #fa5bc5; /* Changes the background colour to a light pink shade */
+  color: #fff; /* Set the text color to white */
+  border: none; /* Remove the border around the button */
+  padding: 10px 20px; /* Set the padding inside the button to 10 pixels on the top and bottom, and 20 pixels on the left and right */
+  border-radius: 5px; /* Round the corners of the button with a border radius of 5 pixels */
+  font-size: 16px; /* Set the font size to 16 pixels */
+  cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
 }
 
 input[type="submit"]:hover,
 input[type="reset"]:hover {
-  background-color: #e640a8;
+  background-color: #e640a8; /* Changes the background to the two buttons to a hot pink colour */
 }
 
 
